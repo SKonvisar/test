@@ -53,18 +53,32 @@ header {
 /* SLIDER */
 .slider {
   text-align: center;
+  position: relative;
   padding: 100px 0px;
   background-image: url("../img/slider-bg.jpg");
   background-size: cover; }
   .slider p {
     display: inline-block;
-    height: 100%; }
+    text-align: left;
+    color: white; }
+    .slider p span:first-of-type {
+      display: inline-block;
+      font-size: 48px;
+      font-family: "Open Sans";
+      font-weight: 800;
+      text-transform: uppercase; }
+    .slider p span:last-of-type {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 40px;
+      font-family: "Freestyle script"; }
   .slider form {
     display: inline-block;
     position: relative;
     border-radius: 5%;
     background-color: #fff;
-    padding: 40px 40px 35px 30px; }
+    padding: 30px 40px 20px 30px;
+    margin-right: 85px; }
     .slider form h3 {
       text-align: left;
       margin-bottom: 30px;
@@ -74,6 +88,7 @@ header {
       font-weight: 600; }
     .slider form input, .slider form select {
       padding: 18px 10px 20px;
+      width: 230px;
       background-color: #f2f2f2;
       margin-bottom: 18px;
       border: none;
@@ -86,11 +101,32 @@ header {
       -moz-appearance: none;
       appearance: none;
       padding-right: 30px; }
-    .slider form button {
+    .slider form .button {
       background-color: #475bf1;
-      padding: 17px 64px;
-      text-align: right;
+      padding: 12px 64px;
       color: #fff;
+      font-size: 16px;
+      font-family: 'Open Sans';
+      font-weight: 800;
+      width: 175px;
       border-radius: 5%;
-      position: relative;
-      right: 0px; }
+      float: right; }
+      .slider form .button:after {
+        content: '';
+        width: 100%;
+        display: inline-block; }
+
+/* PLACEHOLDERS */
+::-webkit-input-placeholder {
+  color: #a0a0a0; }
+
+::-moz-placeholder {
+  color: #a0a0a0; }
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #a0a0a0; }
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #a0a0a0; }
