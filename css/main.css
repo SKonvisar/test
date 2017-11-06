@@ -1,0 +1,96 @@
+/* VARS */
+/* STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+header {
+  padding: 10px 0px;
+  width: 100%;
+  text-align: center; }
+
+.topMenu {
+  background-color: #fff; }
+  .topMenu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+    .topMenu ul .logo {
+      width: 170px;
+      margin: 0px 100px;
+      text-align: center; }
+      .topMenu ul .logo span {
+        font-size: 24px;
+        color: #808ae2;
+        text-transform: uppercase; }
+    .topMenu ul li {
+      position: relative;
+      font-size: 14px;
+      font-family: 'Open Sans';
+      font-weight: 600;
+      color: #818181; }
+      .topMenu ul li:hover:not(#exception) {
+        color: #5363db; }
+        .topMenu ul li:hover:not(#exception):after {
+          content: "";
+          width: 50%;
+          height: 1px;
+          background-color: #5363db;
+          position: absolute;
+          left: 25%;
+          bottom: -5px; }
+      .topMenu ul li:nth-of-type(4n + 2) {
+        margin: 0px 30px; }
+
+/* SLIDER */
+.slider {
+  text-align: center;
+  padding: 100px 0px;
+  background-image: url("../img/slider-bg.jpg");
+  background-size: cover; }
+  .slider p {
+    display: inline-block;
+    height: 100%; }
+  .slider form {
+    display: inline-block;
+    position: relative;
+    border-radius: 5%;
+    background-color: #fff;
+    padding: 40px 40px 35px 30px; }
+    .slider form h3 {
+      text-align: left;
+      margin-bottom: 30px;
+      color: #5363db;
+      font-size: 26px;
+      font-family: 'Open Sans';
+      font-weight: 600; }
+    .slider form input, .slider form select {
+      padding: 18px 10px 20px;
+      background-color: #f2f2f2;
+      margin-bottom: 18px;
+      border: none;
+      border-radius: 10%; }
+    .slider form select {
+      position: relative;
+      width: 100%;
+      color: #a0a0a0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      padding-right: 30px; }
+    .slider form button {
+      background-color: #475bf1;
+      padding: 17px 64px;
+      text-align: right;
+      color: #fff;
+      border-radius: 5%;
+      position: relative;
+      right: 0px; }
