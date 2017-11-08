@@ -6,7 +6,7 @@
 	<title>Yoga</title>
 </head>
 <body>
-<header>	
+<header id="header">	
 	<nav class="topMenu">
 		<ul>
 			<li><a href="#">About us</a></li>
@@ -25,24 +25,77 @@
 		</ul>
 	</nav>	
 </header>
-<section class="slider">
-	<form action="">
-		<h3>Trial Class</h3>
-		<input type="name" placeholder="Enter your name"><br>
-		<input type="phone" placeholder="Enter your phone"><br>
-		<select name="class" id="">
-			<option>Chose your class</option>
-			<option>class 1 </option>
-			<option>class 2</option>
-		</select><br>
-		<input type="button" value="Try it" class="button">
-	</form>
-	<p>
-	<span>Just Balance<br>
-		your Mind & Body</span><br>
-	<span>Create the healthy living <br>
-		for yourself</span></p>
-</section>
 
+<section class="slider">
+	<div class="container">
+		<form action="">
+			<h3>Trial Class</h3>
+			<input type="name" placeholder="Enter your name"><br>
+			<input type="phone" placeholder="Enter your phone"><br>
+			<select name="class" id="">
+				<option>Chose your class</option>
+				<option>YOGA FOR HEALTH</option>
+				<option>YOGA FOR LOSE WEIGHT</option>
+				<option>YOGA FOR CHILDREN</option>
+				<option>YOGA FOR ELDERY</option>
+			</select><br>
+			<input type="button" value="Try it" class="button">
+		</form>
+		<p>
+		<span>Just Balance<br>
+			your Mind & Body</span><br>
+		<span>Create the healthy living <br>
+			for yourself</span></p>
+	</div>
+</section>
+<section class="programm">
+		<h1>Yoga FEATURE PROGRAM</h1>
+		<h2>Our Classes</h2>
+	<div class="container prog-flex">
+		
+		<div class="classes">
+			<img src="img/class1.jpg" alt="class for health">
+			<h3>yoga for health</h3>
+			<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+			<span>Ashtanga - Hatha</span>
+		</div>
+		<div class="classes">
+			<img src="img/class2.jpg" alt="class for health">
+			<h3>yoga for loose weight</h3>
+			<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+			<span>Ashtanga - Hatha</span>
+		</div>
+		<div class="classes">
+			<img src="img/class3.jpg" alt="class for health">
+			<h3>yoga for children</h3>
+			<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+			<span>Ashtanga - Hatha</span>
+		</div>
+		<div class="classes">
+			<img src="img/class4.jpg" alt="class for health">
+			<h3>yoga for eldery</h3>
+			<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+			<span>Ashtanga - Hatha</span>
+		</div>
+		
+	</div>
+</section>
+<section class="gallery">
+<div class="gallery-item"><div class="hovered"><img src="img/search.png" alt="gliph"></div><img src="img/gallery1.jpg" alt=""></div><div class="gallery-item"><div class="hovered"><img src="img/search.png" alt="gliph"></div><img src="img/gallery2.jpg" alt=""></div><div class="gallery-item"><div class="hovered"><img src="img/search.png" alt="gliph"></div><img src="img/gallery3.jpg" alt=""></div><div class="gallery-item"><div class="hovered"><img src="img/search.png" alt="gliph"></div><img src="img/gallery4.jpg" alt=""></div><div class="gallery-item"><div class="hovered"><img src="img/search.png" alt="gliph"></div><img src="img/gallery5.jpg" alt=""></div><div class="gallery-item"><div class="hovered"><img src="img/search.png" alt="gliph"></div><img src="img/gallery6.jpg" alt=""></div><div class="gallery-item"><div class="hovered"><img src="img/search.png" alt="gliph"></div><img src="img/gallery7.jpg" alt=""></div><div class="gallery-item"><div class="hovered"><img src="img/search.png" alt="gliph"></div><img src="img/gallery8.jpg" alt=""></div></section>
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+	
+$(window).scroll(function(){
+	var $head = $('#header');
+	if($(window).scrollTop() > 100){
+		$head.addClass("fixed");
+	} else {
+		$head.removeClass('fixed');
+	}
+	})
+
+</script>
 </body>
 </html>
