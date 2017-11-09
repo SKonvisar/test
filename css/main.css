@@ -222,3 +222,301 @@ header {
         position: absolute;
         left: 40%;
         top: 40%; }
+
+/* ABOUT US */
+.clearfix:after {
+  content: " ";
+  clear: both;
+  width: 100%;
+  height: 0;
+  display: block; }
+
+.about {
+  padding: 125px 0px; }
+  .about .img-slider {
+    position: relative;
+    float: right;
+    width: 48%; }
+    .about .img-slider img {
+      width: 100%;
+      height: auto; }
+    .about .img-slider .btn-prev {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 43%;
+      left: -5%;
+      transform: rotate(180deg); }
+    .about .img-slider .btn-next {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 43%;
+      right: -5%; }
+  .about .text {
+    float: left;
+    width: 43%; }
+    .about .text h3 {
+      text-transform: uppercase;
+      font-size: 30px;
+      font-family: "Open Sans";
+      font-weight: 800;
+      margin: 25px 0px;
+      color: #5b6ceb; }
+    .about .text p {
+      font-size: 14px;
+      color: #555555; }
+
+/* FEATURES */
+.features {
+  padding: 125px 0;
+  background-image: url("../img/featuresbg.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
+  .features .featflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between; }
+  .features .feature {
+    width: 22%;
+    text-align: center; }
+    .features .feature:nth-of-type(-n+4) {
+      margin-bottom: 50px; }
+    .features .feature h3 {
+      margin: 25px 0px 15px;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 800;
+      font-family: "Open Sans";
+      color: #fff; }
+    .features .feature p {
+      font-family: "Open Sans";
+      font-size: 16px;
+      color: #fff; }
+
+/* PRICES */
+.prises {
+  padding: 100px 0px 150px;
+  background-image: url("../img/lotos-bg.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
+  .prises .prices_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .prises .prices_top .price {
+      background-color: #fff;
+      width: 31.5%;
+      -webkit-box-shadow: 3px 5px 16px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 3px 5px 16px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 3px 5px 16px 0px rgba(0, 0, 0, 0.1);
+      border-top-left-radius: 15%;
+      border-top-right-radius: 15%; }
+      .prises .prices_top .price .price_top {
+        color: #fff;
+        border-top-left-radius: 15%;
+        border-top-right-radius: 15%;
+        background-color: #5b6ceb;
+        padding: 50px 0px;
+        text-align: center;
+        font-size: 66px;
+        line-height: 0.8;
+        font-weight: 800;
+        font-family: "Open Sans"; }
+        .prises .prices_top .price .price_top span {
+          font-size: 18px; }
+  .prises .price_text {
+    position: relative;
+    padding: 50px 0px;
+    text-align: center; }
+    .prises .price_text div {
+      position: relative;
+      padding: 20px 0px;
+      text-transform: uppercase;
+      color: #555555;
+      font-size: 18px; }
+      .prises .price_text div:nth-of-type(2):after {
+        content: "";
+        width: 100px;
+        height: 1px;
+        background-color: #d7d7d7;
+        position: absolute;
+        left: 35%;
+        bottom: 0; }
+      .prises .price_text div:nth-of-type(2):before {
+        content: "";
+        width: 100px;
+        height: 1px;
+        background-color: #d7d7d7;
+        position: absolute;
+        left: 35%;
+        top: 0; }
+    .prises .price_text button {
+      width: 46%;
+      margin-top: 30px;
+      padding: 13px;
+      border: none;
+      border-radius: 20px;
+      text-align: center;
+      background-color: #5b6ceb;
+      color: #fff;
+      font-size: 18px;
+      font-family: "Open Sans";
+      font-weight: 600; }
+  .prises .prices_quote {
+    position: relative;
+    margin-top: 105px;
+    padding: 50px 0px;
+    background-color: #fff;
+    width: 100%;
+    -webkit-box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.1); }
+    .prises .prices_quote .photo {
+      display: inline-block;
+      position: relative;
+      width: 23%;
+      text-align: center; }
+      .prises .prices_quote .photo:after {
+        content: "";
+        width: 1px;
+        height: 75px;
+        background-color: #d7d7d7;
+        position: absolute;
+        right: 0;
+        bottom: 5%; }
+    .prises .prices_quote blockquote {
+      position: relative;
+      vertical-align: top;
+      display: inline-block;
+      width: 63%;
+      padding: 0px 30px;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-style: italic;
+      color: #555555; }
+      .prises .prices_quote blockquote:before {
+        content: " \" ";
+        color: #5b6ceb;
+        font-size: 60px;
+        position: absolute;
+        line-height: 0;
+        left: -2%;
+        transform: rotate(180deg); }
+      .prises .prices_quote blockquote:after {
+        content: " \" ";
+        color: #5b6ceb;
+        font-size: 60px;
+        position: absolute;
+        line-height: 0;
+        bottom: 30%;
+        right: -2%; }
+      .prises .prices_quote blockquote p {
+        margin-bottom: 30px; }
+      .prises .prices_quote blockquote span:nth-of-type(1) {
+        font-size: 14px;
+        color: #777777;
+        font-style: normal; }
+      .prises .prices_quote blockquote span:nth-of-type(2) {
+        font-family: "Open Sans";
+        font-weight: 800;
+        font-size: 16px;
+        color: #5b6ceb;
+        font-style: normal; }
+    .prises .prices_quote .otherTrainer {
+      padding: 0px 35px;
+      width: 22%;
+      background-color: transparent;
+      vertical-align: middle;
+      position: absolute;
+      bottom: -14%;
+      left: 25%; }
+      .prises .prices_quote .otherTrainer img {
+        float: left; }
+      .prises .prices_quote .otherTrainer div {
+        margin: 14px 0px 14px 15px;
+        display: inline-block;
+        line-height: 1.4;
+        span-font-size: 14px;
+        span-font-family: "Open Sans";
+        span-font-weight: 800;
+        span-color: #555555; }
+        .prises .prices_quote .otherTrainer div span:last-of-type {
+          font-size: 12px;
+          font-family: "Open Sans";
+          font-weight: normal;
+          color: #777777; }
+      .prises .prices_quote .otherTrainer .btn:nth-of-type(2) {
+        position: absolute;
+        width: 29px;
+        height: 29px;
+        right: -5%;
+        top: 30%; }
+      .prises .prices_quote .otherTrainer .btn:last-of-type {
+        position: absolute;
+        width: 29px;
+        height: 29px;
+        left: -5%;
+        top: 30%;
+        transform: rotate(180deg); }
+
+/* FOOTER */
+.footer {
+  vertical-align: top;
+  padding: 90px 0px;
+  background-color: #5b6ceb; }
+  .footer .footer_about {
+    width: 40%;
+    float: left; }
+    .footer .footer_about h3 {
+      font-size: 18px;
+      font-family: "Open Sans";
+      font-weight: 800;
+      color: #fff;
+      text-transform: uppercase; }
+    .footer .footer_about p {
+      font-size: 14px;
+      font-family: "Open Sans";
+      color: #fff;
+      margin: 50px 0px; }
+    .footer .footer_about .social img {
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      margin-right: 10px; }
+  .footer .contact {
+    width: 43%;
+    display: inline-block;
+    margin-left: 10%; }
+    .footer .contact h3 {
+      font-size: 18px;
+      font-family: "Open Sans";
+      font-weight: 800;
+      color: #fff;
+      text-transform: uppercase; }
+    .footer .contact .contact_flex {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .footer .contact .contact_flex div {
+        width: 40%;
+        margin-bottom: 30px;
+        font-family: "Open Sans";
+        font-size: 14px;
+        color: #fff; }
+        .footer .contact .contact_flex div img {
+          width: 27px;
+          height: 27px;
+          float: left; }
+
+.coopyright {
+  padding: 40px 0px;
+  background-color: #5363d8;
+  text-align: center;
+  font-size: 16px;
+  color: #b7bffc;
+  font-family: "Open Sans"; }

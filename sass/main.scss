@@ -258,3 +258,364 @@ header{
 		}
 	}
 }
+
+/* ABOUT US */
+.clearfix {
+	&:after{
+		content:" ";
+		clear: both;
+		width: 100%;
+		height: 0;
+		display: block;
+	}
+}
+.about {
+	padding: 125px 0px;
+	.img-slider {
+		position: relative;
+		float: right;
+		width: 48%;
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.btn-prev{
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			top:43%;
+			left:-5%;
+			transform: rotate(180deg);
+		}
+		.btn-next{
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			top:43%;
+			right:-5%;
+		}
+	}
+	.text {
+		float:left;
+		width: 43%;
+		h3 {
+			text-transform: uppercase;
+			font-size: 30px;
+			font-family: "Open Sans";
+			font-weight: 800;
+			margin: 25px 0px;
+			color:#5b6ceb;
+		}
+		p{
+			font-size: 14px;
+			color:#555555;
+		}
+	}
+}
+
+/* FEATURES */
+
+.features {
+	padding: 125px 0;
+	background-image: url('../img/featuresbg.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	.featflex {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-content: space-between;
+			justify-content: space-between;
+		}
+	.feature {
+		width: 22%;
+		text-align: center;
+		&:nth-of-type(-n+4){
+			margin-bottom:50px;
+		};
+		h3{
+			margin: 25px 0px 15px;
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: 800;
+			font-family: "Open Sans";
+			color:#fff;
+		}
+		p {
+			font-family: "Open Sans";
+			font-size: 16px;
+			color:#fff;
+		}
+	}
+}
+
+/* PRICES */
+
+.prises {
+	padding: 100px 0px 150px;
+	background-image: url('../img/lotos-bg.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	.prices_top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		.price {
+			background-color: #fff;
+			width: 31.5%;
+			-webkit-box-shadow: 3px 5px 16px 0px rgba(0,0,0,0.1);
+			-moz-box-shadow: 3px 5px 16px 0px rgba(0,0,0,0.1);
+			box-shadow: 3px 5px 16px 0px rgba(0,0,0,0.1);
+			border-top-left-radius: 15%;
+			border-top-right-radius: 15%;
+			.price_top{
+				color:#fff;
+				border-top-left-radius: 15%;
+				border-top-right-radius: 15%;
+				background-color: #5b6ceb;
+				padding: 50px 0px;
+				text-align: center;
+				font-size: 66px;
+				line-height: 0.8;
+				font-weight: 800;
+				font-family: "Open Sans";
+				span{
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	.price_text {
+		position: relative;
+		padding: 50px 0px;
+		text-align: center;
+		div {
+			position: relative;
+			padding: 20px 0px;
+			text-transform: uppercase;
+			color:#555555;
+			font-size: 18px;
+			&:nth-of-type(2){
+				&:after{
+					content:"";
+					width: 100px;
+					height: 1px;
+					background-color:#d7d7d7;
+					position: absolute;
+					left:35%;
+					bottom: 0;
+				}
+				&:before{
+					content:"";
+					width: 100px;
+					height: 1px;
+					background-color:#d7d7d7;
+					position: absolute;
+					left:35%;
+					top:0;
+				}
+			};
+		}
+		button{
+			width: 46%;
+			margin-top: 30px;
+			padding: 13px;
+			border: none;
+			border-radius: 20px;
+			text-align: center;
+			background-color: #5b6ceb;
+			color:#fff;
+			font-size: 18px;
+			font-family: "Open Sans";
+			font-weight: 600;
+		}
+	}
+	.prices_quote {
+		position: relative;
+		margin-top: 105px;
+		padding: 50px 0px;
+		background-color: #fff;
+		width: 100%;
+		-webkit-box-shadow: 3px 3px 16px 0px rgba(0,0,0,0.1);
+		-moz-box-shadow: 3px 3px 16px 0px rgba(0,0,0,0.1);
+		box-shadow: 3px 3px 16px 0px rgba(0,0,0,0.1);
+		.photo {
+			display: inline-block;
+			position: relative;
+			width: 23%;
+			text-align: center;
+			&:after{
+				content:"";
+				width: 1px;
+				height: 75px;
+				background-color: #d7d7d7;
+				position: absolute;
+				right: 0;
+				bottom:5%;
+			}
+		}
+		blockquote {
+			position: relative;
+			vertical-align: top;
+			display: inline-block;
+			width: 63%;
+			padding: 0px 30px;
+			font-family: "Open Sans";
+			font-size: 14px;
+			font-style: italic;
+			color:#555555;
+			&:before {
+				content:" \" ";
+				color:#5b6ceb;
+				font-size: 60px;
+				position: absolute;
+				line-height: 0;
+				left: -2%;
+				transform: rotate(180deg);
+			
+			}
+			&:after{
+				content:" \" ";
+				color:#5b6ceb;
+				font-size: 60px;
+				position: absolute;
+				line-height: 0;
+				bottom: 30%;
+				right: -2%;			
+			}
+			p {
+				margin-bottom: 30px;
+			}
+			span:nth-of-type(1){
+				font-size: 14px;
+				color:#777777;
+				font-style: normal;
+			}
+			span:nth-of-type(2){
+				font-family: "Open Sans";
+				font-weight: 800;
+				font-size: 16px;
+				color: #5b6ceb;
+				font-style: normal;
+			}
+		}
+		.otherTrainer{
+			padding: 0px 35px;
+			width: 22%;
+			background-color:transparent;
+			vertical-align: middle;
+			position: absolute;
+			bottom: -14%;
+			left: 25%;
+			img{
+				float: left;	
+			}
+			div{
+				margin:14px 0px 14px 15px;
+				display: inline-block;
+				line-height: 1.4;
+				span:{
+					font-size:14px;
+					font-family: "Open Sans";
+					font-weight: 800;
+					color:#555555;
+				}
+				span:last-of-type{
+					font-size:12px;
+					font-family: "Open Sans";
+					font-weight: normal;
+					color:#777777;	
+				}
+			}
+			.btn:nth-of-type(2) {
+					position: absolute;
+					width: 29px;
+					height: 29px;
+					right: -5%;
+					top:30%;
+				}
+			.btn:last-of-type{
+					position: absolute;
+					width: 29px;
+					height: 29px;
+					left: -5%;
+					top:30%;
+					transform: rotate(180deg);
+				}
+		}
+	}
+
+}
+
+/* FOOTER */
+
+.footer {
+	vertical-align: top;
+	padding: 90px 0px;
+	background-color: #5b6ceb;
+	.footer_about{
+		width: 40%;
+		float:left;
+		h3 {
+			font-size: 18px;
+			font-family: "Open Sans";
+			font-weight: 800;
+			color:#fff;
+			text-transform: uppercase;
+		}
+		p {
+			font-size: 14px;
+			font-family: "Open Sans";
+			color:#fff;
+			margin:50px 0px;
+		}
+		.social {
+			img{
+				width: 25px;
+				height: 25px;
+				display: inline-block;
+				margin-right: 10px;
+			}
+		}	
+	}
+	.contact {
+		width: 43%;
+		display: inline-block;
+		margin-left: 10%;
+		h3 {
+			font-size: 18px;
+			font-family: "Open Sans";
+			font-weight: 800;
+			color:#fff;
+			text-transform: uppercase;
+		}
+		.contact_flex{
+			margin-top: 50px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			div{
+				width: 40%;
+				margin-bottom: 30px;
+				font-family: "Open Sans";
+				font-size: 14px;
+				color:#fff;
+				img {
+					width: 27px;
+					height: 27px;
+					float: left;
+				}
+			}
+		}
+	}
+}
+
+.coopyright {
+	padding: 40px 0px;
+	background-color: #5363d8;
+	text-align: center;
+	font-size: 16px;
+	color:#b7bffc;
+	font-family: "Open Sans";
+}
