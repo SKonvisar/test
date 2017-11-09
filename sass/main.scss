@@ -16,6 +16,9 @@ a {
 .container {
 	width: 85%;
 	margin: 0 auto;
+	@media screen and (max-width: 1009px){
+		width: 95%;
+	}
 }
 header{
 	padding: 10px 0px;
@@ -36,10 +39,29 @@ header{
 		flex-wrap: nowrap;
 		justify-content: center;
 		align-items: center;
+		@media screen and (max-width: 663px){
+			justify-content: space-between;
+		}
+		.mnu {
+			display: none;
+			color:$mText;
+			@media screen and (max-width: 663px){
+				display: block;
+			}
+		}
 		.logo {
 			width: 170px;
 			margin:0px 100px;
 			text-align: center;
+			@media screen and (max-width: 851px) {
+				margin: 0px 75px;
+			}
+			@media screen and (max-width: 797px){
+				margin: 0px 50px;
+			}
+			@media screen and (max-width: 744px){
+				margin: 0px 10px;
+			}
 			span {
 				font-size: 24px;
 				color:$logo-text;
@@ -52,6 +74,11 @@ header{
 			font-family: 'Open Sans';
 			font-weight: 600;
 			color:$mText;
+			&:not(#exception){
+				@media screen and (max-width: 663px){
+					display: none;
+				}
+			};
 			&:hover:not(#exception){
 				color:$mTextHover;
 				&:after{
@@ -67,6 +94,11 @@ header{
 			&:nth-of-type(4n + 2){
 				margin: 0px 30px;
 			}
+			#exeption {
+				@media screen and (max-width: 663px){
+					text-align: left;
+				}
+			}
 		}
 	}
 }
@@ -81,11 +113,24 @@ header{
 	background-size:cover;
 	p {
 		display: inline-block;
+		/* @media screen and (max-width: 750px){
+			display:blok;
+			float:left;
+		}; */
+		@media screen and (max-width: 667px){
+			display: block;
+			margin-top: 30px;
+			float:none;
+			text-align: center;
+		}
 		text-align: left;
 		color:white;
 		span:first-of-type{
 			display: inline-block;
-			font-size:48px;
+			font-size:3.36vw;
+			@media screen and (max-width: 667px){
+				font-size: 35px;
+			}
 			font-family: "Open Sans";
 			font-weight: 800;
 			text-transform: uppercase;
@@ -93,17 +138,32 @@ header{
 		span:last-of-type {
 			display: inline-block;
 			margin-top: 20px;
-			font-size: 40px;
+			font-size: 2.9vw;
+			@media screen and (max-width: 667px){
+				font-size: 30px;
+			}
 			font-family: "Freestyle script"
 		}
 	}
 	form {
 		display: inline-block;
+		/* @media screen and (max-width: 750px){
+			display:blok;
+			float:left;
+			margin-left: 55px;
+		}; */
+		@media screen and (max-width: 667px){
+			float:none;
+			margin:0 auto;
+		}
 		position: relative;
 		border-radius: 5%;
 		background-color: #fff;
 		padding: 30px 40px 20px 30px;
 		margin-right: 65px;
+		@media screen and (max-width: 903px){
+			margin-right: 25px;
+		}
 		h3 {
 			text-align: left;
 			margin-bottom: 30px;
@@ -164,6 +224,9 @@ header{
 		flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: space-between;
+		@media screen and (max-width: 432px){
+			justify-content: center;
+		}
 
 	}
 	h1 {
@@ -182,30 +245,75 @@ header{
 	}
 	.classes {
 		width: 48%;
+		@media screen and (max-width: 1127px) {
+			width: 49%;
+		}
+		@media screen and (max-width: 432px){
+			width: 80%;
+		}
 		margin-bottom: 25px;
 		padding-right: 20px;
+		@media screen and (max-width: 701px){
+			text-align: center;;
+			padding-right: 0px;
+		}
 		-webkit-box-shadow: 5px 5px 16px 0px rgba(0,0,0,0.1);
 		-moz-box-shadow: 5px 5px 16px 0px rgba(0,0,0,0.1);
 		box-shadow: 5px 5px 16px 0px rgba(0,0,0,0.1);
 		h3{
 			font-size: 16px;
+			@media screen and (max-width: 1219px) {
+				font-size: 14px;
+				
+			}
 			color:#777777;
 			text-transform: uppercase;
 			margin-top: 50px;
+			@media screen and (max-width: 1101px) {
+				margin-top: 30px;
+			}
 		}
 		img {
 			float: left;
 			margin-right: 30px;
+			@media screen and (max-width: 1061px) {
+				width: 200px;
+				height: auto;
+			}
+			@media screen and (max-width: 701px){
+				float:none;
+				width: 100%;
+				height: auto;
+				margin:0;
+			}
+			
 		}
 		p {
 			margin: 35px 0px;
+			@media (min-width: 1100px) and (max-width: 1267px){
+				margin: 25px 0px;
+			}
+			@media screen and (max-width: 1101px) {
+				margin: 15px 0px;
+			}
 			font-size: 14px;
+			@media screen and (max-width: 1219px) {
+				font-size: 13px;
+			}
+			@media screen and (max-width: 701px){
+				margin: 15px 10px;
+			}
 			font-family: "Open Sans";
 			color:#555555;
 		}
 		span {
 			color:#999999;
 			font-size: 14px;
+			@media screen and (max-width: 1219px) {
+				font-size: 13px;
+				
+			}
+			
 		}
 		&:after{
 				content:"";
@@ -249,8 +357,8 @@ header{
 			top: 0;
 			bottom: 0;
 			img{
-				width: 59px;
-				height: 59px;
+				width: 4.4vw;
+				height: 4.4vw;
 				position: absolute;
 				left: 40%;
 				top: 40%;
@@ -275,22 +383,27 @@ header{
 		position: relative;
 		float: right;
 		width: 48%;
+		@media screen and (max-width: 655px) {
+			float:none;
+			width: 80%;
+			margin:0 auto;			
+		}
 		img {
 			width: 100%;
 			height: auto;
 		}
 		.btn-prev{
 			position: absolute;
-			width: 50px;
-			height: 50px;
+			width: 3.77vw;
+			height: 3.77vw;
 			top:43%;
 			left:-5%;
 			transform: rotate(180deg);
 		}
 		.btn-next{
 			position: absolute;
-			width: 50px;
-			height: 50px;
+			width: 3.77vw;
+			height: 3.77vw;
 			top:43%;
 			right:-5%;
 		}
@@ -298,6 +411,11 @@ header{
 	.text {
 		float:left;
 		width: 43%;
+		@media screen and (max-width: 655px) {
+			float:none;
+			width: 80%;			
+			margin:0 auto;
+		}
 		h3 {
 			text-transform: uppercase;
 			font-size: 30px;
@@ -326,9 +444,16 @@ header{
 			flex-wrap: wrap;
 			align-content: space-between;
 			justify-content: space-between;
+			@media screen and (max-width: 701px) {
+				justify-content: space-around;
+			}
 		}
 	.feature {
 		width: 22%;
+		@media screen and (max-width: 701px) {
+			width: 45%;
+			margin-bottom: 50px;
+		}
 		text-align: center;
 		&:nth-of-type(-n+4){
 			margin-bottom:50px;
@@ -359,10 +484,18 @@ header{
 	.prices_top {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-between;
+		@media screen and (max-width: 788px){
+			justify-content: center;
+		} 
 		.price {
 			background-color: #fff;
 			width: 31.5%;
+			@media screen and (max-width: 788px){
+				width: 60%;
+				margin-bottom: 25px;
+			} 
 			-webkit-box-shadow: 3px 5px 16px 0px rgba(0,0,0,0.1);
 			-moz-box-shadow: 3px 5px 16px 0px rgba(0,0,0,0.1);
 			box-shadow: 3px 5px 16px 0px rgba(0,0,0,0.1);
@@ -417,7 +550,7 @@ header{
 			};
 		}
 		button{
-			width: 46%;
+			width: 48%;
 			margin-top: 30px;
 			padding: 13px;
 			border: none;
@@ -441,10 +574,18 @@ header{
 		box-shadow: 3px 3px 16px 0px rgba(0,0,0,0.1);
 		.photo {
 			display: inline-block;
+			@media screen and (max-width: 760px) {
+				display: block;
+				margin:0 auto 15px;				
+			}
 			position: relative;
 			width: 23%;
 			text-align: center;
 			&:after{
+				@media screen and (max-width: 760px) {
+					display: none;
+					margin:0 auto;				
+				}
 				content:"";
 				width: 1px;
 				height: 75px;
@@ -459,6 +600,11 @@ header{
 			vertical-align: top;
 			display: inline-block;
 			width: 63%;
+			@media screen and (max-width: 760px) {
+				display: block;
+				width: 85%;
+				margin:0 auto;				
+			}
 			padding: 0px 30px;
 			font-family: "Open Sans";
 			font-size: 14px;
@@ -502,10 +648,23 @@ header{
 		.otherTrainer{
 			padding: 0px 35px;
 			width: 22%;
+			@media (min-width: 899px) and (max-width: 1237px){
+				width: 30%;
+			}
+			@media (min-width: 697px) and (max-width: 901px){
+				width: 35%;
+			}
+			@media (min-width: 637px) and (max-width: 697px){
+				width: 45%;
+			}
 			background-color:transparent;
 			vertical-align: middle;
 			position: absolute;
 			bottom: -14%;
+			@media (min-width: 374px) and (max-width: 637px){
+				width: 65%;
+				bottom: -9%;
+			}
 			left: 25%;
 			img{
 				float: left;	
@@ -573,6 +732,10 @@ header{
 			img{
 				width: 25px;
 				height: 25px;
+				@media screen and (max-width: 507px) {
+					width: 15px;
+					height: 15px;
+				}
 				display: inline-block;
 				margin-right: 10px;
 			}
@@ -597,6 +760,9 @@ header{
 			justify-content: space-between;
 			div{
 				width: 40%;
+				@media screen and (max-width: 667px) {
+					width: 100%
+				}
 				margin-bottom: 30px;
 				font-family: "Open Sans";
 				font-size: 14px;

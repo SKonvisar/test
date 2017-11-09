@@ -12,6 +12,9 @@ a {
 .container {
   width: 85%;
   margin: 0 auto; }
+  @media screen and (max-width: 1009px) {
+    .container {
+      width: 95%; } }
 
 header {
   padding: 10px 0px;
@@ -32,10 +35,28 @@ header {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center; }
+    @media screen and (max-width: 663px) {
+      .topMenu ul {
+        justify-content: space-between; } }
+    .topMenu ul .mnu {
+      display: none;
+      color: #818181; }
+      @media screen and (max-width: 663px) {
+        .topMenu ul .mnu {
+          display: block; } }
     .topMenu ul .logo {
       width: 170px;
       margin: 0px 100px;
       text-align: center; }
+      @media screen and (max-width: 851px) {
+        .topMenu ul .logo {
+          margin: 0px 75px; } }
+      @media screen and (max-width: 797px) {
+        .topMenu ul .logo {
+          margin: 0px 50px; } }
+      @media screen and (max-width: 744px) {
+        .topMenu ul .logo {
+          margin: 0px 10px; } }
       .topMenu ul .logo span {
         font-size: 24px;
         color: #808ae2;
@@ -46,6 +67,9 @@ header {
       font-family: 'Open Sans';
       font-weight: 600;
       color: #818181; }
+      @media screen and (max-width: 663px) {
+        .topMenu ul li:not(#exception) {
+          display: none; } }
       .topMenu ul li:hover:not(#exception) {
         color: #5363db; }
         .topMenu ul li:hover:not(#exception):after {
@@ -58,6 +82,9 @@ header {
           bottom: -5px; }
       .topMenu ul li:nth-of-type(4n + 2) {
         margin: 0px 30px; }
+      @media screen and (max-width: 663px) {
+        .topMenu ul li #exeption {
+          text-align: left; } }
 
 /* SLIDER */
 .slider {
@@ -68,26 +95,54 @@ header {
   background-size: cover; }
   .slider p {
     display: inline-block;
+    /* @media screen and (max-width: 750px){
+			display:blok;
+			float:left;
+		}; */
     text-align: left;
     color: white; }
+    @media screen and (max-width: 667px) {
+      .slider p {
+        display: block;
+        margin-top: 30px;
+        float: none;
+        text-align: center; } }
     .slider p span:first-of-type {
       display: inline-block;
-      font-size: 48px;
+      font-size: 3.36vw;
       font-family: "Open Sans";
       font-weight: 800;
       text-transform: uppercase; }
+      @media screen and (max-width: 667px) {
+        .slider p span:first-of-type {
+          font-size: 35px; } }
     .slider p span:last-of-type {
       display: inline-block;
       margin-top: 20px;
-      font-size: 40px;
+      font-size: 2.9vw;
       font-family: "Freestyle script"; }
+      @media screen and (max-width: 667px) {
+        .slider p span:last-of-type {
+          font-size: 30px; } }
   .slider form {
     display: inline-block;
+    /* @media screen and (max-width: 750px){
+			display:blok;
+			float:left;
+			margin-left: 55px;
+		}; */
     position: relative;
     border-radius: 5%;
     background-color: #fff;
     padding: 30px 40px 20px 30px;
     margin-right: 65px; }
+    @media screen and (max-width: 667px) {
+      .slider form {
+        float: none;
+        margin: 0 auto; } }
+    @media screen and (max-width: 903px) {
+      .slider form {
+        margin-right: 25px; } }
     .slider form h3 {
       text-align: left;
       margin-bottom: 30px;
@@ -149,6 +204,9 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between; }
+    @media screen and (max-width: 432px) {
+      .programm .prog-flex {
+        justify-content: center; } }
   .programm h1 {
     font-size: 30px;
     font-family: "Open Sans";
@@ -168,22 +226,63 @@ header {
     -webkit-box-shadow: 5px 5px 16px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 5px 5px 16px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 5px 5px 16px 0px rgba(0, 0, 0, 0.1); }
+    @media screen and (max-width: 1127px) {
+      .programm .classes {
+        width: 49%; } }
+    @media screen and (max-width: 432px) {
+      .programm .classes {
+        width: 80%; } }
+    @media screen and (max-width: 701px) {
+      .programm .classes {
+        text-align: center;
+        padding-right: 0px; } }
     .programm .classes h3 {
       font-size: 16px;
       color: #777777;
       text-transform: uppercase;
       margin-top: 50px; }
+      @media screen and (max-width: 1219px) {
+        .programm .classes h3 {
+          font-size: 14px; } }
+      @media screen and (max-width: 1101px) {
+        .programm .classes h3 {
+          margin-top: 30px; } }
     .programm .classes img {
       float: left;
       margin-right: 30px; }
+      @media screen and (max-width: 1061px) {
+        .programm .classes img {
+          width: 200px;
+          height: auto; } }
+      @media screen and (max-width: 701px) {
+        .programm .classes img {
+          float: none;
+          width: 100%;
+          height: auto;
+          margin: 0; } }
     .programm .classes p {
       margin: 35px 0px;
       font-size: 14px;
       font-family: "Open Sans";
       color: #555555; }
+      @media (min-width: 1100px) and (max-width: 1267px) {
+        .programm .classes p {
+          margin: 25px 0px; } }
+      @media screen and (max-width: 1101px) {
+        .programm .classes p {
+          margin: 15px 0px; } }
+      @media screen and (max-width: 1219px) {
+        .programm .classes p {
+          font-size: 13px; } }
+      @media screen and (max-width: 701px) {
+        .programm .classes p {
+          margin: 15px 10px; } }
     .programm .classes span {
       color: #999999;
       font-size: 14px; }
+      @media screen and (max-width: 1219px) {
+        .programm .classes span {
+          font-size: 13px; } }
     .programm .classes:after {
       content: "";
       clear: both;
@@ -217,8 +316,8 @@ header {
       top: 0;
       bottom: 0; }
       .gallery .gallery-item .hovered img {
-        width: 59px;
-        height: 59px;
+        width: 4.4vw;
+        height: 4.4vw;
         position: absolute;
         left: 40%;
         top: 40%; }
@@ -237,25 +336,35 @@ header {
     position: relative;
     float: right;
     width: 48%; }
+    @media screen and (max-width: 655px) {
+      .about .img-slider {
+        float: none;
+        width: 80%;
+        margin: 0 auto; } }
     .about .img-slider img {
       width: 100%;
       height: auto; }
     .about .img-slider .btn-prev {
       position: absolute;
-      width: 50px;
-      height: 50px;
+      width: 3.77vw;
+      height: 3.77vw;
       top: 43%;
       left: -5%;
       transform: rotate(180deg); }
     .about .img-slider .btn-next {
       position: absolute;
-      width: 50px;
-      height: 50px;
+      width: 3.77vw;
+      height: 3.77vw;
       top: 43%;
       right: -5%; }
   .about .text {
     float: left;
     width: 43%; }
+    @media screen and (max-width: 655px) {
+      .about .text {
+        float: none;
+        width: 80%;
+        margin: 0 auto; } }
     .about .text h3 {
       text-transform: uppercase;
       font-size: 30px;
@@ -279,9 +388,16 @@ header {
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between; }
+    @media screen and (max-width: 701px) {
+      .features .featflex {
+        justify-content: space-around; } }
   .features .feature {
     width: 22%;
     text-align: center; }
+    @media screen and (max-width: 701px) {
+      .features .feature {
+        width: 45%;
+        margin-bottom: 50px; } }
     .features .feature:nth-of-type(-n+4) {
       margin-bottom: 50px; }
     .features .feature h3 {
@@ -305,7 +421,11 @@ header {
   .prises .prices_top {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between; }
+    @media screen and (max-width: 788px) {
+      .prises .prices_top {
+        justify-content: center; } }
     .prises .prices_top .price {
       background-color: #fff;
       width: 31.5%;
@@ -314,6 +434,10 @@ header {
       box-shadow: 3px 5px 16px 0px rgba(0, 0, 0, 0.1);
       border-top-left-radius: 15%;
       border-top-right-radius: 15%; }
+      @media screen and (max-width: 788px) {
+        .prises .prices_top .price {
+          width: 60%;
+          margin-bottom: 25px; } }
       .prises .prices_top .price .price_top {
         color: #fff;
         border-top-left-radius: 15%;
@@ -354,7 +478,7 @@ header {
         left: 35%;
         top: 0; }
     .prises .price_text button {
-      width: 46%;
+      width: 48%;
       margin-top: 30px;
       padding: 13px;
       border: none;
@@ -379,6 +503,10 @@ header {
       position: relative;
       width: 23%;
       text-align: center; }
+      @media screen and (max-width: 760px) {
+        .prises .prices_quote .photo {
+          display: block;
+          margin: 0 auto 15px; } }
       .prises .prices_quote .photo:after {
         content: "";
         width: 1px;
@@ -387,6 +515,10 @@ header {
         position: absolute;
         right: 0;
         bottom: 5%; }
+        @media screen and (max-width: 760px) {
+          .prises .prices_quote .photo:after {
+            display: none;
+            margin: 0 auto; } }
     .prises .prices_quote blockquote {
       position: relative;
       vertical-align: top;
@@ -397,6 +529,11 @@ header {
       font-size: 14px;
       font-style: italic;
       color: #555555; }
+      @media screen and (max-width: 760px) {
+        .prises .prices_quote blockquote {
+          display: block;
+          width: 85%;
+          margin: 0 auto; } }
       .prises .prices_quote blockquote:before {
         content: " \" ";
         color: #5b6ceb;
@@ -433,6 +570,19 @@ header {
       position: absolute;
       bottom: -14%;
       left: 25%; }
+      @media (min-width: 899px) and (max-width: 1237px) {
+        .prises .prices_quote .otherTrainer {
+          width: 30%; } }
+      @media (min-width: 697px) and (max-width: 901px) {
+        .prises .prices_quote .otherTrainer {
+          width: 35%; } }
+      @media (min-width: 637px) and (max-width: 697px) {
+        .prises .prices_quote .otherTrainer {
+          width: 45%; } }
+      @media (min-width: 374px) and (max-width: 637px) {
+        .prises .prices_quote .otherTrainer {
+          width: 65%;
+          bottom: -9%; } }
       .prises .prices_quote .otherTrainer img {
         float: left; }
       .prises .prices_quote .otherTrainer div {
@@ -486,6 +636,10 @@ header {
       height: 25px;
       display: inline-block;
       margin-right: 10px; }
+      @media screen and (max-width: 507px) {
+        .footer .footer_about .social img {
+          width: 15px;
+          height: 15px; } }
   .footer .contact {
     width: 43%;
     display: inline-block;
@@ -508,6 +662,9 @@ header {
         font-family: "Open Sans";
         font-size: 14px;
         color: #fff; }
+        @media screen and (max-width: 667px) {
+          .footer .contact .contact_flex div {
+            width: 100%; } }
         .footer .contact .contact_flex div img {
           width: 27px;
           height: 27px;
