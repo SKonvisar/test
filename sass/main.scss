@@ -32,7 +32,7 @@ header{
 }
 .topMenu {
 	background-color: #fff;
-	ul {
+	ul:not(.hamb-menu) {
 		list-style: none;
 		display: flex;
 		flex-direction: row;
@@ -42,13 +42,7 @@ header{
 		@media screen and (max-width: 663px){
 			justify-content: space-between;
 		}
-		.mnu {
-			display: none;
-			color:$mText;
-			@media screen and (max-width: 663px){
-				display: block;
-			}
-		}
+		
 		.logo {
 			width: 170px;
 			margin:0px 100px;
@@ -101,6 +95,50 @@ header{
 			}
 		}
 	}
+}
+
+.hamburger {
+	display: none;
+	color:$mText;
+	@media screen and (max-width: 663px){
+		display: block;
+	}
+}
+.hamb-menu {
+	display: none;
+	position: absolute;
+	right: 0;
+	width: 60%;
+	background-color: #fff;
+	padding: 15px 10px;
+	z-index: 6;
+	li{
+		padding: 20px 0px;
+		font-size: 18px;
+		font-family: 'Open Sans';
+		font-weight: 600;
+		color:$mText;
+		width: 100%;
+		display: block;
+		&:not(:last-of-type) {
+			border-bottom: 1px solid $mText;
+		}
+		&:hover{
+			color:$mTextHover;
+			&:after{
+				content:"";
+				width: 50%;
+				height: 1px;
+				background-color:$mTextHover;
+				position: absolute;
+				left:25%;
+				bottom: -5px;
+			}
+		}
+	}
+}
+.open {
+	display: block;
 }
 
 /* SLIDER */
@@ -515,6 +553,9 @@ header{
 				span{
 					font-size: 18px;
 				}
+				.exception {
+					font-size: 66px;
+				}
 			}
 		}
 	}
@@ -561,7 +602,17 @@ header{
 			font-size: 18px;
 			font-family: "Open Sans";
 			font-weight: 600;
+			&:hover {
+				-webkit-box-shadow: 0px 0px 23px 0px #5b6ceb;
+				-moz-box-shadow: 0px 0px 23px 0px #5b6ceb;
+				box-shadow: 0px 0px 23px 0px #5b6ceb;
+			}
 		}
+	}
+	.hovered{
+		-webkit-box-shadow: 0px 0px 23px 0px #fff;
+		-moz-box-shadow: 0px 0px 23px 0px #fff;
+		box-shadow: 0px 0px 23px 0px #fff;
 	}
 	.prices_quote {
 		position: relative;

@@ -28,7 +28,7 @@ header {
 
 .topMenu {
   background-color: #fff; }
-  .topMenu ul {
+  .topMenu ul:not(.hamb-menu) {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -36,43 +36,37 @@ header {
     justify-content: center;
     align-items: center; }
     @media screen and (max-width: 663px) {
-      .topMenu ul {
+      .topMenu ul:not(.hamb-menu) {
         justify-content: space-between; } }
-    .topMenu ul .mnu {
-      display: none;
-      color: #818181; }
-      @media screen and (max-width: 663px) {
-        .topMenu ul .mnu {
-          display: block; } }
-    .topMenu ul .logo {
+    .topMenu ul:not(.hamb-menu) .logo {
       width: 170px;
       margin: 0px 100px;
       text-align: center; }
       @media screen and (max-width: 851px) {
-        .topMenu ul .logo {
+        .topMenu ul:not(.hamb-menu) .logo {
           margin: 0px 75px; } }
       @media screen and (max-width: 797px) {
-        .topMenu ul .logo {
+        .topMenu ul:not(.hamb-menu) .logo {
           margin: 0px 50px; } }
       @media screen and (max-width: 744px) {
-        .topMenu ul .logo {
+        .topMenu ul:not(.hamb-menu) .logo {
           margin: 0px 10px; } }
-      .topMenu ul .logo span {
+      .topMenu ul:not(.hamb-menu) .logo span {
         font-size: 24px;
         color: #808ae2;
         text-transform: uppercase; }
-    .topMenu ul li {
+    .topMenu ul:not(.hamb-menu) li {
       position: relative;
       font-size: 14px;
       font-family: 'Open Sans';
       font-weight: 600;
       color: #818181; }
       @media screen and (max-width: 663px) {
-        .topMenu ul li:not(#exception) {
+        .topMenu ul:not(.hamb-menu) li:not(#exception) {
           display: none; } }
-      .topMenu ul li:hover:not(#exception) {
+      .topMenu ul:not(.hamb-menu) li:hover:not(#exception) {
         color: #5363db; }
-        .topMenu ul li:hover:not(#exception):after {
+        .topMenu ul:not(.hamb-menu) li:hover:not(#exception):after {
           content: "";
           width: 50%;
           height: 1px;
@@ -80,11 +74,50 @@ header {
           position: absolute;
           left: 25%;
           bottom: -5px; }
-      .topMenu ul li:nth-of-type(4n + 2) {
+      .topMenu ul:not(.hamb-menu) li:nth-of-type(4n + 2) {
         margin: 0px 30px; }
       @media screen and (max-width: 663px) {
-        .topMenu ul li #exeption {
+        .topMenu ul:not(.hamb-menu) li #exeption {
           text-align: left; } }
+
+.hamburger {
+  display: none;
+  color: #818181; }
+  @media screen and (max-width: 663px) {
+    .hamburger {
+      display: block; } }
+
+.hamb-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 60%;
+  background-color: #fff;
+  padding: 15px 10px;
+  z-index: 6; }
+  .hamb-menu li {
+    padding: 20px 0px;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #818181;
+    width: 100%;
+    display: block; }
+    .hamb-menu li:not(:last-of-type) {
+      border-bottom: 1px solid #818181; }
+    .hamb-menu li:hover {
+      color: #5363db; }
+      .hamb-menu li:hover:after {
+        content: "";
+        width: 50%;
+        height: 1px;
+        background-color: #5363db;
+        position: absolute;
+        left: 25%;
+        bottom: -5px; }
+
+.open {
+  display: block; }
 
 /* SLIDER */
 .slider {
@@ -451,6 +484,8 @@ header {
         font-family: "Open Sans"; }
         .prises .prices_top .price .price_top span {
           font-size: 18px; }
+        .prises .prices_top .price .price_top .exception {
+          font-size: 66px; }
   .prises .price_text {
     position: relative;
     padding: 50px 0px;
@@ -489,6 +524,14 @@ header {
       font-size: 18px;
       font-family: "Open Sans";
       font-weight: 600; }
+      .prises .price_text button:hover {
+        -webkit-box-shadow: 0px 0px 23px 0px #5b6ceb;
+        -moz-box-shadow: 0px 0px 23px 0px #5b6ceb;
+        box-shadow: 0px 0px 23px 0px #5b6ceb; }
+  .prises .hovered {
+    -webkit-box-shadow: 0px 0px 23px 0px #fff;
+    -moz-box-shadow: 0px 0px 23px 0px #fff;
+    box-shadow: 0px 0px 23px 0px #fff; }
   .prises .prices_quote {
     position: relative;
     margin-top: 105px;
